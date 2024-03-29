@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Maps Background</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    #map-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+    }
+    #content {
+      position: relative;
+      z-index: 1;
+      padding: 20px;
+      color: white; /* Example styles for content */
+    }
+  </style>
+</head>
+<body>
+  <iframe id="map-background" src="https://www.google.com/maps/d/u/0/embed?mid=1up8cstnmpzd64IQhafUGxvAJjB4Qg2c&ehbc=2E312F&noprof=1" frameborder="0"></iframe>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Your website content goes here -->
+  <div id="content">
+    <h1></h1>
+    <p></p>
+  </div>
+</body>
+</html>
